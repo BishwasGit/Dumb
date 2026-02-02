@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-lotus-100 via-lavender-100 to-peach-100 text-gray-800 min-h-screen overflow-hidden selection:bg-lotus-200;
+  }
+  
+  /* Remove tap highlight on mobile */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer utilities {
+  .text-dreamy {
+    text-shadow: 0 2px 10px rgba(244, 114, 182, 0.2);
+  }
+}
